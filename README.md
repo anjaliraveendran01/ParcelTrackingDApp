@@ -40,3 +40,10 @@ This project is a decentralized application (DApp) that uses blockchain technolo
 
 ## Project Purpose
 This project demonstrates how blockchain technology can provide transparent and reliable parcel tracking.
+## Project Screenshots
+
+### Website Connected to MetaMask
+![MetaMask Connection](parcel-tracking-website-connect-with-metamask.png)
+
+### Parcel Tracking Result
+![Parcel Tracking Result](parcel-tracking-result.png)
