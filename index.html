@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Tracking DApp</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #12304a;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #12304a;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: #087e8b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #06636d;
+        }
+
+        #message, #result {
+            margin-top: 15px;
+            overflow-wrap: anywhere;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parcel Tracking System</h1>
+    <p>Track your parcel using blockchain technology</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Connect Wallet</h2>
+        <button id="connectButton">Connect MetaMask</button>
+        <p id="walletInfo">Wallet not connected</p>
+    </section>
+
+    <section class="card">
+        <h2>Register Parcel</h2>
+        <input id="trackingId" placeholder="Enter tracking ID">
+        <input id="destination" placeholder="Enter destination">
+        <button id="registerButton">Register Parcel</button>
+    </section>
+
+    <section class="card">
+        <h2>Update Parcel Status</h2>
+        <input id="updateId" placeholder="Enter tracking ID">
+        <input id="newStatus" placeholder="Enter new status">
+        <button id="updateButton">Update Status</button>
+    </section>
+
+    <section class="card">
+        <h2>Track Parcel</h2>
+        <input id="searchId" placeholder="Enter tracking ID">
+        <button id="trackButton">Track Parcel</button>
+        <div id="result"></div>
+    </section>
+
+    <p id="message"></p>
+</main>
+
+<footer>
+    Blockchain-Based Parcel Tracking System
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
+
